@@ -1,0 +1,30 @@
+# sprout
+
+Felix's experiments with Leiningen and clojure
+
+## Usage
+
+<no command-line app yet, just library functions>
+
+working towards calculating Aut(O) for O=omega in the topos of sets over a monoid M
+
+Can calculate all endomorphisms of n - represented as vectors of length n, with values 
+in (range 0 n)
+
+Find the minimal number of generators of a monoid (num-gens M)
+Build the symmetric group on n letters (symmetric-group n)
+List all maps from A to B, (all-maps A B)
+
+Can calculate the power-set of a collection
+
+Given a bunch of endomorphisms of n for some finite n, calculate
+the monoid they generate. The latest version of this doesn't require you
+to fill in the entire array. So for example the two endomorphisms
+0 -> 1, 1 -> 0
+0 -> 1, 1 -> 2, 2 -> 0
+on 3 generate this monoid:
+(generate [1 0] [1 2 0]) ==> full symmetry group S_3
+
+## License
+
+Copyright (C) 2011 Felix Dilke

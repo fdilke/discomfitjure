@@ -1,0 +1,47 @@
+Authorization details for Kazunk (experimental Twitter app)
+
+Access level	 Read-only 
+About the application permission model
+Consumer key	WEnu4lnTW6JUJBvsqj3mYA
+Consumer secret	JqLuo4RVin66TJiWgrd4iDnw13pWlb5wYGYMhaIrg
+Request token URL	https://api.twitter.com/oauth/request_token
+Authorize URL	https://api.twitter.com/oauth/authorize
+Access token URL	https://api.twitter.com/oauth/access_token
+Access token	21803358-ZMPPU3ZO293r5GexkDPkU6H9EtqfJHnx4qVYkgVHv
+Access token secret	R0Ee6IraIaQZJmwDJYocC1iuhFXdWBPJlMhoDVgMo
+
+DONE:
+introduce 'num-gens-m', phase out num-gens in favour of it
+move the 2-generator test code out of monoids
+
+sort out function 'monoid'
+sort out num-gens which assumes an endovec monoid
+
+add opposite of a monoid
+move num-gens from endovec-monoid to monoid:
+get rid of generate
+compare submonoids-old and submonoids(-new)
+add a :submonoid instead of submonoid
+fix generate-monoid so we don't have to use 'apply' with it
+add a ':generate' to monoid
+compare submonoids-old and submonoids(-new)
+add a :submonoid instead of submonoid
+add a script automatically executed by 'lein repl' so I don't need (use 'sprout.xxx)
+try Clooj
+lose 'generate-endovecs' function
+
+TO DO
+test omega-autos properly
+add right scalar multiplication for the omega autos: show matrices??
+display the autos in readable form??
+make monoid-sets into proper objects
+add proper packages (not 'sprout')
+try proxies - create an object that thinks it is equal to 2 - set-arrow, Conway games
+have some sort of VTBL mechanism in the object system, so we don't duplicate methods
+calculate product monoids. have a test that GF(2)^n has the right number of submonoids
+use defprotocol/reify to create a simple topos API
+add definition of 'goop'
+why does this have delays in the wrong places?
+(def M3s (submonoids (all-endos 2)))
+(doall (for [S M3s] (println :x (S :set) (num-gens S) (count (omega-autos S)))))
+need to understand lazy evaluation better...

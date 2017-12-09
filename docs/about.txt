@@ -1,0 +1,33 @@
+=== done ===
+add 'nonKeyword' function to my-oo
+fix the map function in my-oo to always supply itself as the 'this' argument, rather than the map
+factor out 'extend-endovec'
+make endo-vec => endovec everywhere (just to be consistent)
+use 'functionize' to tidy up the implementation of my-oo
+add a Y combinator
+add an inheritance mechanism to my-oo
+make my-clojure-koans an assembla project [created a space for it...]
+[install Inconsolata. IDEA, La Clojure]
+
+my-oo:
+simple 'object management system' that lets us wrap any map as a function.
+By convention, the entries in the map are either values (for getters) or
+functions which take the map itself as an initial 'this' argument.
+
+== self-navigation ==
+don't do anything until it is in the 'to do' list
+use paper?
+
+== other to do ==
+use the formalism (deftest ... (testing "xx" (is ...)) - note 'testing' can be nested
+
+=== to do: ===
+add comments to all functions
+write up properly how objectify-map works
+implement fixtures for sets, following the Bile pattern - we'll have a 'wrapping layer' which adds extra features
+also make (x y) work for function composition
+experiment with proxies: can we override 'equals'?
+monoids: good idea to make the elements 'smart functions', so they can act on each other? (x y) PROBABLY: yes but do it when?
+generate submonoids from elements: should be a method on monoid?
+try adding Java classes to Disclojure, as a dress rehearsal for moving it all into Bile (compound Java/Clojure project)
+investigate Leiningen startup scripts for 'lein repl', import everything
